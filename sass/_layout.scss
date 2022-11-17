@@ -1,0 +1,184 @@
+.header {
+  &__hero {
+    font-family: "IBM Plex Sans";
+    max-width: 101.5rem;
+    font-size: 8.8rem;
+    line-height: 0.8;
+    margin-top: -27rem;
+    margin-bottom: 4rem;
+    @media only screen and (max-width: $bp-large) {
+      margin-top: -37rem;
+    }
+  }
+  &__paragraph {
+    font-family: "IBM Plex Sans";
+    font-size: 2rem;
+    color: #191826;
+    max-width: 82.5rem;
+    margin-bottom: 38rem;
+    @media only screen and (max-width: $bp-large) {
+      max-width: 60rem;
+    }
+  }
+  &__photo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__logo {
+    margin-top: -32rem;
+    @media only screen and (max-width: $bp-large) {
+      margin-top: -40rem;
+    }
+  }
+  &__pattern {
+    margin-top: -3rem;
+    margin-left: 70.5%;
+
+    @media only screen and (max-width: $bp-largest) {
+      margin-left: 50rem;
+    }
+  }
+}
+
+.section {
+  max-width: 111rem;
+  height: 60rem;
+  border-radius: 1.2rem;
+  color: $color-white;
+  background-color: $color-blue;
+  margin: 0 auto;
+
+  background-repeat: no-repeat;
+  display: flex;
+
+  justify-content: space-around;
+
+  @media only screen and (max-width: $bp-smallest) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__illustration {
+    width: 100%;
+    max-width: 59.65rem;
+    height: 60rem;
+    background-image: url(/assets/bg-pattern-2.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    position: relative;
+    margin-top: -4rem;
+    margin-right: 20rem;
+    // margin-left: 30rem;
+  }
+  &__mobile-img {
+    // margin-top: -19rem;
+    width: 28rem;
+    height: 60rem;
+    position: absolute;
+    top: 67rem;
+    left: 28%;
+    transform: translate(-50%);
+    z-index: 1;
+  }
+  &__orange-box {
+    max-width: 44.6rem;
+    height: 62.5rem;
+    background: $color-orange;
+    margin-top: 9rem;
+    border-radius: 1.2rem;
+    position: absolute;
+    z-index: 1;
+    justify-content: space-around;
+    margin-left: 42rem;
+
+    @media only screen and (max-width: $bp-smallest) {
+      max-width: 56.3rem;
+      margin-top: 95rem;
+      margin-left: 0;
+    }
+  }
+  &__orange-content {
+    margin: 5.4rem 5.8rem;
+  }
+  &__orange-header {
+    font-family: "IBM Plex Sans";
+    font-size: 4rem;
+  }
+  &__orange-paragraph {
+    font-size: 2rem;
+  }
+  &__price {
+    font-size: 6.5rem;
+    font-weight: 700;
+  }
+  &__month {
+    font-size: 2rem;
+  }
+  &__button-apple {
+    max-width: 33.3rem;
+    height: 6rem;
+    background: $color-blue;
+    margin-bottom: 1.6rem;
+    color: white;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__button-android {
+    max-width: 33.3rem;
+    height: 6rem;
+    background: $color-white;
+    color: $color-blue;
+    // text-decoration: none !important;
+    font-size: 1.8rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.section__button-android,
+text {
+  text-decoration: none;
+}
+
+.footer {
+  margin-top: 30rem;
+  margin-bottom: 9.1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  @media only screen and (max-width: $bp-smallest) {
+    margin-top: 60rem;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  &__paragraph-p {
+    max-width: 36.6rem;
+    font-size: 1.6rem;
+    margin: 0 2rem 0 2rem;
+  }
+  &__icon-container-i {
+    @media only screen and (max-width: $bp-smallest) {
+      margin-top: 4rem;
+    }
+  }
+  &__logo-l {
+    @media only screen and (max-width: $bp-smallest) {
+      margin-bottom: 3.2rem;
+    }
+  }
+  &__fb-icon-f {
+    margin-right: 2rem;
+  }
+  &__insta-icon-f {
+    margin-right: 2rem;
+  }
+}

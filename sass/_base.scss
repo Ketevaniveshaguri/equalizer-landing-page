@@ -1,0 +1,53 @@
+$color-white: #fcfaf9;
+$color-blue: #191826;
+$color-orange: #fa7453;
+$color-yellow: #ffb964;
+$color-cyan: #66e2dc;
+$background-color: #f2f2f2;
+
+$bp-largest: 75em; //1200
+$bp-large: 68.75em;
+$bp-medium: 56.25em;
+$bp-small: 37.5em;
+$bp-smallest: 31.25em;
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+
+  @media only screen and (max-width: $bp-large) {
+    font-size: 50%;
+  }
+}
+
+body {
+  max-width: 144rem;
+  font-family: "IBM Plex Sans";
+
+  // min-height: 100vh;
+  font-weight: 500;
+  line-height: 1.6;
+  background: $background-color;
+  background-image: url(/assets/bg-main-desktop.png);
+  background-repeat: unset;
+  background-position: top -25rem right -25rem;
+  mix-blend-mode: normal;
+}
+
+.container {
+  max-width: 100%;
+  // height: 100vh;
+  width: 80%;
+  margin-inline: auto;
+
+  @media only screen and (max-width: $bp-large) {
+    width: 90%;
+  }
+}

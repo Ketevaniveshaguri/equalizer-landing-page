@@ -1,0 +1,184 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+  @media only screen and (max-width: 68.75em) {
+    html {
+      font-size: 50%; } }
+
+body {
+  max-width: 144rem;
+  font-family: "IBM Plex Sans";
+  font-weight: 500;
+  line-height: 1.6;
+  background: #f2f2f2;
+  background-image: url(/assets/bg-main-desktop.png);
+  background-repeat: unset;
+  background-position: top -25rem right -25rem;
+  mix-blend-mode: normal; }
+
+.container {
+  max-width: 100%;
+  width: 80%;
+  margin-inline: auto; }
+  @media only screen and (max-width: 68.75em) {
+    .container {
+      width: 90%; } }
+
+.header__hero {
+  font-family: "IBM Plex Sans";
+  max-width: 101.5rem;
+  font-size: 8.8rem;
+  line-height: 0.8;
+  margin-top: -27rem;
+  margin-bottom: 4rem; }
+  @media only screen and (max-width: 68.75em) {
+    .header__hero {
+      margin-top: -37rem; } }
+
+.header__paragraph {
+  font-family: "IBM Plex Sans";
+  font-size: 2rem;
+  color: #191826;
+  max-width: 82.5rem;
+  margin-bottom: 38rem; }
+  @media only screen and (max-width: 68.75em) {
+    .header__paragraph {
+      max-width: 60rem; } }
+
+.header__photo-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.header__logo {
+  margin-top: -32rem; }
+  @media only screen and (max-width: 68.75em) {
+    .header__logo {
+      margin-top: -40rem; } }
+
+.header__pattern {
+  margin-top: -3rem;
+  margin-left: 70.5%; }
+  @media only screen and (max-width: 75em) {
+    .header__pattern {
+      margin-left: 50rem; } }
+
+.section {
+  max-width: 111rem;
+  height: 60rem;
+  border-radius: 1.2rem;
+  color: #fcfaf9;
+  background-color: #191826;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-around; }
+  @media only screen and (max-width: 31.25em) {
+    .section {
+      display: flex;
+      flex-direction: column; } }
+  .section__illustration {
+    width: 100%;
+    max-width: 59.65rem;
+    height: 60rem;
+    background-image: url(/assets/bg-pattern-2.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    position: relative;
+    margin-top: -4rem;
+    margin-right: 20rem; }
+  .section__mobile-img {
+    width: 28rem;
+    height: 60rem;
+    position: absolute;
+    top: 67rem;
+    left: 28%;
+    transform: translate(-50%);
+    z-index: 1; }
+  .section__orange-box {
+    max-width: 44.6rem;
+    height: 62.5rem;
+    background: #fa7453;
+    margin-top: 9rem;
+    border-radius: 1.2rem;
+    position: absolute;
+    z-index: 1;
+    justify-content: space-around;
+    margin-left: 42rem; }
+    @media only screen and (max-width: 31.25em) {
+      .section__orange-box {
+        max-width: 56.3rem;
+        margin-top: 95rem;
+        margin-left: 0; } }
+  .section__orange-content {
+    margin: 5.4rem 5.8rem; }
+  .section__orange-header {
+    font-family: "IBM Plex Sans";
+    font-size: 4rem; }
+  .section__orange-paragraph {
+    font-size: 2rem; }
+  .section__price {
+    font-size: 6.5rem;
+    font-weight: 700; }
+  .section__month {
+    font-size: 2rem; }
+  .section__button-apple {
+    max-width: 33.3rem;
+    height: 6rem;
+    background: #191826;
+    margin-bottom: 1.6rem;
+    color: white;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .section__button-android {
+    max-width: 33.3rem;
+    height: 6rem;
+    background: #fcfaf9;
+    color: #191826;
+    font-size: 1.8rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+.section__button-android,
+text {
+  text-decoration: none; }
+
+.footer {
+  margin-top: 30rem;
+  margin-bottom: 9.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between; }
+  @media only screen and (max-width: 31.25em) {
+    .footer {
+      margin-top: 60rem;
+      flex-direction: column;
+      justify-content: flex-start; } }
+  .footer__paragraph-p {
+    max-width: 36.6rem;
+    font-size: 1.6rem;
+    margin: 0 2rem 0 2rem; }
+  @media only screen and (max-width: 31.25em) {
+    .footer__icon-container-i {
+      margin-top: 4rem; } }
+  @media only screen and (max-width: 31.25em) {
+    .footer__logo-l {
+      margin-bottom: 3.2rem; } }
+  .footer__fb-icon-f {
+    margin-right: 2rem; }
+  .footer__insta-icon-f {
+    margin-right: 2rem; }
