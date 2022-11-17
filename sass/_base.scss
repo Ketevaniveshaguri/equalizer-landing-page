@@ -23,7 +23,7 @@ html {
   font-size: 62.5%;
 
   @media only screen and (max-width: $bp-large) {
-    font-size: 50%;
+    font-size: 45%;
   }
 }
 
@@ -39,6 +39,7 @@ body {
   background-repeat: unset;
   background-position: top -25rem right -25rem;
   mix-blend-mode: normal;
+  overflow-x: hidden;
 }
 
 .container {

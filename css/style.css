@@ -10,7 +10,7 @@ html {
   font-size: 62.5%; }
   @media only screen and (max-width: 68.75em) {
     html {
-      font-size: 50%; } }
+      font-size: 45%; } }
 
 body {
   max-width: 144rem;
@@ -21,7 +21,8 @@ body {
   background-image: url(/assets/bg-main-desktop.png);
   background-repeat: unset;
   background-position: top -25rem right -25rem;
-  mix-blend-mode: normal; }
+  mix-blend-mode: normal;
+  overflow-x: hidden; }
 
 .container {
   max-width: 100%;
@@ -38,9 +39,10 @@ body {
   line-height: 0.8;
   margin-top: -27rem;
   margin-bottom: 4rem; }
-  @media only screen and (max-width: 68.75em) {
+  @media only screen and (max-width: 37.5em) {
     .header__hero {
-      margin-top: -37rem; } }
+      font-size: 5rem;
+      margin-top: -24rem; } }
 
 .header__paragraph {
   font-family: "IBM Plex Sans";
@@ -58,17 +60,16 @@ body {
   align-items: center; }
 
 .header__logo {
-  margin-top: -32rem; }
-  @media only screen and (max-width: 68.75em) {
-    .header__logo {
-      margin-top: -40rem; } }
+  margin-top: -26rem; }
 
 .header__pattern {
+  max-width: 30rem;
+  max-height: 46rem;
   margin-top: -3rem;
-  margin-left: 70.5%; }
+  transform: translate(60%); }
   @media only screen and (max-width: 75em) {
     .header__pattern {
-      margin-left: 50rem; } }
+      margin-left: 55rem; } }
 
 .section {
   max-width: 111rem;
@@ -80,7 +81,7 @@ body {
   background-repeat: no-repeat;
   display: flex;
   justify-content: space-around; }
-  @media only screen and (max-width: 31.25em) {
+  @media only screen and (max-width: 37.5em) {
     .section {
       display: flex;
       flex-direction: column; } }
@@ -94,6 +95,9 @@ body {
     position: relative;
     margin-top: -4rem;
     margin-right: 20rem; }
+    @media only screen and (max-width: 37.5em) {
+      .section__illustration {
+        margin-top: 0; } }
   .section__mobile-img {
     width: 28rem;
     height: 60rem;
@@ -102,6 +106,10 @@ body {
     left: 28%;
     transform: translate(-50%);
     z-index: 1; }
+    @media only screen and (max-width: 37.5em) {
+      .section__mobile-img {
+        top: 65rem;
+        left: 50%; } }
   .section__orange-box {
     max-width: 44.6rem;
     height: 62.5rem;
@@ -112,11 +120,16 @@ body {
     z-index: 1;
     justify-content: space-around;
     margin-left: 42rem; }
-    @media only screen and (max-width: 31.25em) {
+    @media only screen and (max-width: 56.25em) {
       .section__orange-box {
-        max-width: 56.3rem;
-        margin-top: 95rem;
-        margin-left: 0; } }
+        margin-left: 17rem;
+        margin-top: 15rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .section__orange-box {
+        max-width: 60.6rem;
+        margin-top: 100rem;
+        margin-left: 0;
+        max-width: 90%; } }
   .section__orange-content {
     margin: 5.4rem 5.8rem; }
   .section__orange-header {
@@ -140,7 +153,12 @@ body {
     font-weight: 700;
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    border-radius: 1.2rem; }
+    @media only screen and (max-width: 37.5em) {
+      .section__button-apple {
+        margin-top: 4rem;
+        transform: translate(25%); } }
   .section__button-android {
     max-width: 33.3rem;
     height: 6rem;
@@ -150,11 +168,31 @@ body {
     font-weight: 700;
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    border-radius: 1.2rem; }
+    @media only screen and (max-width: 37.5em) {
+      .section__button-android {
+        transform: translate(25%); } }
+  .section__button-apple:hover {
+    background-color: #66e2dc;
+    transition: all 0.5s ease;
+    cursor: pointer; }
+  .section__button-android:hover {
+    background-color: #ffb964;
+    transition: all 0.5s ease;
+    cursor: pointer; }
+  .section__text-android {
+    text-decoration: none; }
+  .section__text-apple {
+    text-decoration: none;
+    color: #fcfaf9; }
 
-.section__button-android,
-text {
-  text-decoration: none; }
+.apple-icon {
+  margin-right: 1.5rem; }
+
+.android-icon {
+  margin-right: 1.5rem;
+  text-align: center; }
 
 .footer {
   margin-top: 30rem;
@@ -163,19 +201,19 @@ text {
   align-items: center;
   justify-content: center;
   justify-content: space-between; }
-  @media only screen and (max-width: 31.25em) {
+  @media only screen and (max-width: 37.5em) {
     .footer {
       margin-top: 60rem;
       flex-direction: column;
-      justify-content: flex-start; } }
+      justify-content: start; } }
   .footer__paragraph-p {
     max-width: 36.6rem;
     font-size: 1.6rem;
     margin: 0 2rem 0 2rem; }
-  @media only screen and (max-width: 31.25em) {
+  @media only screen and (max-width: 37.5em) {
     .footer__icon-container-i {
       margin-top: 4rem; } }
-  @media only screen and (max-width: 31.25em) {
+  @media only screen and (max-width: 37.5em) {
     .footer__logo-l {
       margin-bottom: 3.2rem; } }
   .footer__fb-icon-f {

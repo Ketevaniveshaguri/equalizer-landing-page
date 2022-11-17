@@ -6,8 +6,10 @@
     line-height: 0.8;
     margin-top: -27rem;
     margin-bottom: 4rem;
-    @media only screen and (max-width: $bp-large) {
-      margin-top: -37rem;
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 5rem;
+      margin-top: -24rem;
     }
   }
   &__paragraph {
@@ -26,17 +28,19 @@
     align-items: center;
   }
   &__logo {
-    margin-top: -32rem;
-    @media only screen and (max-width: $bp-large) {
-      margin-top: -40rem;
-    }
+    margin-top: -26rem;
   }
   &__pattern {
+    max-width: 30rem;
+    max-height: 46rem;
     margin-top: -3rem;
-    margin-left: 70.5%;
+    transform: translate(60%);
+
+    // margin-left: 76.5%;
 
     @media only screen and (max-width: $bp-largest) {
-      margin-left: 50rem;
+      margin-left: 55rem;
+      // width: 50%;
     }
   }
 }
@@ -54,7 +58,7 @@
 
   justify-content: space-around;
 
-  @media only screen and (max-width: $bp-smallest) {
+  @media only screen and (max-width: $bp-small) {
     display: flex;
     flex-direction: column;
   }
@@ -70,6 +74,9 @@
     margin-top: -4rem;
     margin-right: 20rem;
     // margin-left: 30rem;
+    @media only screen and (max-width: $bp-small) {
+      margin-top: 0;
+    }
   }
   &__mobile-img {
     // margin-top: -19rem;
@@ -80,6 +87,11 @@
     left: 28%;
     transform: translate(-50%);
     z-index: 1;
+
+    @media only screen and (max-width: $bp-small) {
+      top: 65rem;
+      left: 50%;
+    }
   }
   &__orange-box {
     max-width: 44.6rem;
@@ -92,10 +104,16 @@
     justify-content: space-around;
     margin-left: 42rem;
 
-    @media only screen and (max-width: $bp-smallest) {
-      max-width: 56.3rem;
-      margin-top: 95rem;
+    @media only screen and (max-width: $bp-medium) {
+      margin-left: 17rem;
+      margin-top: 15rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      max-width: 60.6rem;
+      margin-top: 100rem;
       margin-left: 0;
+      max-width: 90%;
     }
   }
   &__orange-content {
@@ -127,6 +145,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 1.2rem;
+    @media only screen and (max-width: $bp-small) {
+      margin-top: 4rem;
+      transform: translate(25%);
+    }
   }
   &__button-android {
     max-width: 33.3rem;
@@ -139,11 +162,39 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 1.2rem;
+    @media only screen and (max-width: $bp-small) {
+      transform: translate(25%);
+    }
+  }
+
+  &__button-apple:hover {
+    background-color: $color-cyan;
+    transition: all 0.5s ease;
+
+    cursor: pointer;
+  }
+  &__button-android:hover {
+    background-color: $color-yellow;
+    transition: all 0.5s ease;
+    cursor: pointer;
+  }
+  &__text-android {
+    text-decoration: none;
+  }
+  &__text-apple {
+    text-decoration: none;
+
+    color: $color-white;
   }
 }
-.section__button-android,
-text {
-  text-decoration: none;
+.apple-icon {
+  margin-right: 1.5rem;
+}
+
+.android-icon {
+  margin-right: 1.5rem;
+  text-align: center;
 }
 
 .footer {
@@ -154,10 +205,10 @@ text {
   align-items: center;
   justify-content: center;
   justify-content: space-between;
-  @media only screen and (max-width: $bp-smallest) {
+  @media only screen and (max-width: $bp-small) {
     margin-top: 60rem;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: start;
   }
 
   &__paragraph-p {
@@ -165,13 +216,14 @@ text {
     font-size: 1.6rem;
     margin: 0 2rem 0 2rem;
   }
+
   &__icon-container-i {
-    @media only screen and (max-width: $bp-smallest) {
+    @media only screen and (max-width: $bp-small) {
       margin-top: 4rem;
     }
   }
   &__logo-l {
-    @media only screen and (max-width: $bp-smallest) {
+    @media only screen and (max-width: $bp-small) {
       margin-bottom: 3.2rem;
     }
   }
