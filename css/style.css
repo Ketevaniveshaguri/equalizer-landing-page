@@ -89,7 +89,7 @@ body {
     width: 100%;
     max-width: 59.65rem;
     height: 60rem;
-    background-image: url(/assets/bg-pattern-2.svg);
+    background-image: url(../assets/bg-pattern-2.svg);
     background-repeat: no-repeat;
     background-position: top;
     position: relative;
@@ -108,7 +108,7 @@ body {
     z-index: 1; }
     @media only screen and (max-width: 37.5em) {
       .section__mobile-img {
-        top: 65rem;
+        top: 72rem;
         left: 50%; } }
   .section__orange-box {
     max-width: 44.6rem;
@@ -172,7 +172,7 @@ body {
     border-radius: 1.2rem; }
     @media only screen and (max-width: 37.5em) {
       .section__button-android {
-        transform: translate(25%); } }
+        transform: translate(20%); } }
   .section__button-apple:hover {
     background-color: #66e2dc;
     transition: all 0.5s ease;
