@@ -70,6 +70,9 @@ body {
   @media only screen and (max-width: 75em) {
     .header__pattern {
       margin-left: 55rem; } }
+@media only screen and (max-width: 37.5em) {
+    .header__pattern {
+      display:none;} }
 
 .section {
   max-width: 111rem;
